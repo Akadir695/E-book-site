@@ -1,0 +1,44 @@
+// Font
+$font-family-sans-serif: "Open Sans", sans-serif;
+$primary: #c167ef;
+$secondary: #10bcee;
+$dark: #2b3041;
+$light: #f3f6f9;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: $secondary;
+$button-radius: 50px; // Custom button border-radius for rounded buttons
+$btn-border-radius: $button-radius; // Assigns the custom radius to all buttons
+$btn-border-radius-sm: $button-radius; // Small button radius
+$btn-border-radius-lg: $button-radius; // Large button radius
+
+$button-padding-y: 10px; // Vertical padding for buttons
+$button-padding-x: 30px; // Horizontal padding for buttons
+
+$btn-padding-y: $button-padding-y; // Standard vertical padding for buttons
+$btn-padding-x: $button-padding-x; // Standard horizontal padding for buttons
+$btn-padding-y-sm: $button-padding-y; // Small vertical padding for buttons
+$btn-padding-y-lg: $button-padding-y; // Large vertical padding for buttons
+$btn-padding-x-lg: $button-padding-x; // Large horizontal padding for buttons
+$btn-padding-x-sm: $button-padding-x; // Small horizontal padding for buttons
+$navbar-toggler-border-radius: 5px; // Set border-radius to 0 for the toggle button
+
+//  spacers
+$spacer: 1rem !default; // Define a default spacer
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default; // Define a map for spacers
+
+$line-height-base: 1.7;
+$headings-margin-bottom: map-get($spacers, 1); // or any other value you prefer
+
+@import "../node_modules/bootstrap/scss/bootstrap";

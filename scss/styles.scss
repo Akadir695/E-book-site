@@ -1,0 +1,57 @@
+.navbar .btn-outline-light:hover {
+  color: var(--bs-dark);
+}
+header {
+  background: url(../images/header-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+// styles.scss
+
+// styles.scss
+
+.mt-n6-custom {
+  margin-top: -3rem !important; // Use with caution
+}
+.download {
+  background: url("../images/download-background.jpg") center center no-repeat;
+  background-size: cover; // This ensures the image covers the entire section
+}
+
+.nav-sticky {
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  .navbar {
+    list-style: none; // Remove bullet points
+    padding: 0; // Remove default padding
+    margin: 0; // Remove default margin
+
+    .nav-item {
+      margin-right: 20px; // Add space between links
+
+      &:last-child {
+        margin-right: 0; // Remove margin for the last item
+      }
+    }
+
+    .nav-link {
+      color: white; // Ensuring links are white
+      text-decoration: none; // Remove underline
+      &:hover {
+        text-decoration: none; // Underline on hover
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .hero .text-container {
+    text-align: center;
+  }
+}
